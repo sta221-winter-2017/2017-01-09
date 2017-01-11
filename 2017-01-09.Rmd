@@ -7,7 +7,6 @@ output:
     incremental: TRUE
     df_print: tibble
     fig_caption: FALSE
-    keep_tex: TRUE
 classoption: aspectratio=169
 ---
 
@@ -169,7 +168,7 @@ For example, roll a fair die. Let $A = \{1,2,3\}$ and $B=\{2,4\}.$
 
 \pause Conclude: $A$ and $B$ are independent (short form: $A \perp B.$)
 
-\pause Exercise: if $C = \{2,4,6\}$ then $B \perp C$ but $A \not{\!\perp} C$
+\pause Exercise: if $C = \{2,5,6\}$ then $B \perp C$ and $A \not{\!\perp} C$ (**CORRECTED FROM CLASS**)
 
 ## independence - comments
 
@@ -294,17 +293,6 @@ unif_means %>%
 ```
 
 
-## $t$ distributions
-
-If a population is being modeled with a $N(\mu,\sigma)$ probability model and you are going to gather a sample $X_1,X_2,\ldots,X_n$, then the following are true:
-
-\begin{align*}
-\onslide<1->{\overline{X} &\sim N(\mu, \sigma/\sqrt{n})\\}
-\onslide<2->{\frac{\overline{X} - \mu}{\sigma/\sqrt{n}} &\sim N(0,1) }
-\end{align*}
-
-\pause We usually don't know $\sigma$, but we can estimate it from the data using $s$, but then:
-$$\frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim t_{n-1}$$
 
 
 
